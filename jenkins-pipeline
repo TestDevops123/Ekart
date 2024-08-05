@@ -50,10 +50,6 @@ pipeline {
             }
             }
         }
-        stage('depoly to nexus') {
-            steps {
-               sh "mvn package -DskipTests=true"
-            }
-        }
+        
     }
 }
